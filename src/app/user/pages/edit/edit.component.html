@@ -1,0 +1,39 @@
+<div class="container mt-5">
+  <div class="text-start container col-12 col-sm-4 mb-3">
+    <a (click)="back()" class="text-secondary-color fw-bold fs-5"><i class="fas fa-arrow-left"></i></a>
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="validatorForm()" class="text-secondary-color container col-12 col-sm-4 rounded bg-white p-3">
+    <div class="mb-3">
+      <label for="name" class="form-label fw-bold">Nome</label>
+      <input type="text" class="form-control" id="name" autofocus formControlName="name" [ngClass]="classError('name')">
+      <div class="invalid-feedback">
+        <p *ngIf="form.controls['name'].errors?.required">Preenchimento obrigatório</p>
+        <p *ngIf="form.controls['name'].errors?.minlength">CPF inválido</p>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="cpf" class="form-label fw-bold">CPF</label>
+      <input type="number" class="form-control" id="cpf" formControlName="cpf" [ngClass]="classError('cpf')">
+      <div class="invalid-feedback">
+        <p *ngIf="form.controls['cpf'].errors?.required">Preenchimento obrigatório</p>
+        <p *ngIf="form.controls['cpf'].errors?.minlength">CPF inválido</p>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="food" class="form-label fw-bold">Comida</label>
+      <div class="d-flex justify-content-center">
+        <input type="text" class="form-control" id="food" formControlName="food" [ngClass]="classError('food')">
+        <a (click)="editComida()"><i class="fas fa-plus" style="cursor: pointer;"></i></a>
+      </div>
+      <div>
+        <small>Selecione uma das comidas abaixo: </small><br>
+        <span *ngFor="let food of editFood; let i = index" (click)="selectedFood = food.food" (click)="selected(food.idFood, i)" class="bg-secondary-color px-1 rounded text-white me-1">{{ food.food }} </span>
+      </div>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn-tertiary-color text-secondary-color fw-bold mt-4 py-2 px-4 border-0 rounded">Editar</button>
+    </div>
+
+  </form>
+</div>

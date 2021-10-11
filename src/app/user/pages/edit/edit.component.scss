@@ -1,0 +1,10 @@
+@import '../../../../styles.scss';
+
+input[type=text], [type=number] {
+  border-radius: 5px;
+  outline: none;
+  &:focus {
+    border: solid 2px $primary-color;
+    box-shadow: none;
+  }
+}

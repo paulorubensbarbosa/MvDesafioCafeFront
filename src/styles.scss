@@ -1,0 +1,11 @@
+$primary-color: #E8D1AF;
+$secondary-color: #722620;
+$tertiary-color: #CBAB96;
+
+$theme-colors:(
+  "primary-color": $primary-color,
+  "secondary-color": $secondary-color,
+  "tertiary-color": $tertiary-color
+);
+
+@import '~bootstrap/scss/bootstrap';
