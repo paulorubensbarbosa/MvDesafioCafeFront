@@ -1,7 +1,15 @@
 # Coffe
 
 ## TELAS
+### Listagem
 ![listatela](https://user-images.githubusercontent.com/72427185/136835540-3e0bd5cd-30a1-4051-a05b-e49fbe5a8889.png)
+
+### Cadastro
+![CADASTROTELA](https://user-images.githubusercontent.com/72427185/136835712-9e77b061-3de0-4b5b-bba3-8536b918d97e.png)
+
+### Edição
+![editartela](https://user-images.githubusercontent.com/72427185/136835740-7897bf6d-2d98-4760-abf7-e5962cde2a07.png)
+
 
 
 
