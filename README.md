@@ -1,5 +1,10 @@
 # Coffe
 
+## TELAS
+![listatela](https://user-images.githubusercontent.com/72427185/136835540-3e0bd5cd-30a1-4051-a05b-e49fbe5a8889.png)
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
 ## Development server
@@ -25,3 +30,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
